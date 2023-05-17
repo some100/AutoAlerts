@@ -49,7 +49,7 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter(void
 
         self.fakeNavBar = [[[UIView alloc] init] autorelease];
         if (@available(iOS 13, *)) {
-            self.fakeNavBar.backgroundColor = [UIColor systemBackgroundColor];
+            self.fakeNavBar.backgroundColor = [UIColor blackColor];
         } else {
             self.fakeNavBar.backgroundColor = [UIColor whiteColor];
         }
@@ -89,7 +89,7 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter(void
     self.tableView = [[[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped] autorelease];
     self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
     if (@available(iOS 13, *)) {
-        self.tableView.backgroundColor = [UIColor systemBackgroundColor];
+        self.tableView.backgroundColor = [UIColor blackColor];
     } else {
         self.tableView.backgroundColor = [UIColor whiteColor];
     }
@@ -317,8 +317,8 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter(void
         }
 
         if (@available(iOS 13, *)) {
-            cell.contentView.backgroundColor = [UIColor systemBackgroundColor];
-            cell.backgroundColor = [UIColor systemBackgroundColor];
+            cell.contentView.backgroundColor = [UIColor blackColor];
+            cell.backgroundColor = [UIColor blackColor];
         } else {
             cell.contentView.backgroundColor = [UIColor whiteColor];
             cell.backgroundColor = [UIColor whiteColor];
@@ -341,8 +341,8 @@ extern "C" CFNotificationCenterRef CFNotificationCenterGetDistributedCenter(void
         }
 
         if (@available(iOS 13, *)) {
-            cell.contentView.backgroundColor = [UIColor systemBackgroundColor];
-            cell.backgroundColor = [UIColor systemBackgroundColor];
+            cell.contentView.backgroundColor = [UIColor blackColor];
+            cell.backgroundColor = [UIColor blackColor];
         } else {
             cell.contentView.backgroundColor = [UIColor whiteColor];
             cell.backgroundColor = [UIColor whiteColor];

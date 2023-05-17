@@ -53,8 +53,8 @@
     topSeparatorView.hidden = YES;
 
     if (@available(iOS 13, *)) {
-        self.contentView.backgroundColor = [UIColor systemBackgroundColor];
-        self.backgroundColor = [UIColor systemBackgroundColor];
+        self.contentView.backgroundColor = [UIColor blackColor];
+        self.backgroundColor = [UIColor blackColor];
     } else {
         self.contentView.backgroundColor = [UIColor whiteColor];
         self.backgroundColor = [UIColor whiteColor];
