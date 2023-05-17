@@ -1,4 +1,4 @@
-Package: dev.und3fy.autoalerts
+Package: com.shiftcmdk.autoalerts
 Name: AutoAlerts
 Depends: mobilesubstrate
 Version: 1.0.2

@@ -26,5 +26,5 @@ jobs:
       - name: Publish artifact
         uses: actions/upload-artifact@v2
         with:
-          name: dev.und3fy.AutoAlerts
+          name: com.shiftcmdk.autoalerts
           path: ${{ github.workspace }}/packages/*.deb
