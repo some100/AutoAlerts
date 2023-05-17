@@ -1,6 +1,7 @@
-include $(THEOS)/makefiles/common.mk
-
+TARGET := iphone:clang:12.4:7.0
 ARCHS = arm64
+
+include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = AutoAlertsPreferences
 AutoAlertsPreferences_FILES = AARootListController.xm ../Model/AAAlertInfo.m ../AAAlertManager.m ../AACoreDataStack.m AAApp.m AAAppOverviewController.xm AAAlertOverviewController.xm
