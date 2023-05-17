@@ -1,6 +1,6 @@
 include $(THEOS)/makefiles/common.mk
 
-ARCHS = arm64 arm64e
+ARCHS = arm64
 
 BUNDLE_NAME = AutoAlertsPreferences
 AutoAlertsPreferences_FILES = AARootListController.xm ../Model/AAAlertInfo.m ../AAAlertManager.m ../AACoreDataStack.m AAApp.m AAAppOverviewController.xm AAAlertOverviewController.xm
