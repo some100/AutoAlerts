@@ -7,6 +7,7 @@ THEOS_PACKAGE_SCHEME=rootless
 TWEAK_NAME = AutoAlerts
 AutoAlerts_FILES = Tweak.xm AAConfigurationViewController.xm AAAppIconCell.m Model/AAAlertInfo.m AACoreDataStack.m AAAlertManager.m
 AutoAlerts_FRAMEWORKS = CoreData
+AutoAlerts_CFLAGS = -Wno-deprecated-declarations
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
