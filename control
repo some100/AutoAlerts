@@ -1,0 +1,9 @@
+Package: com.shiftcmdk.autoalerts
+Name: AutoAlerts
+Depends: mobilesubstrate
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Description: Automate alert actions.
+Maintainer: und3fy
+Author: shiftcmdk
+Section: Tweaks
