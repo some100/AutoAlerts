@@ -1,0 +1,31 @@
+name: Build deb with rootless
+
+on:
+  workflow_dispatch:
+    #tags:
+    #  - 'v*'
+
+    #branches: [ master ]
+  
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Prepare Theos
+        uses: Randomblock1/theos-action@v1 # Randomblock1/theos-action@v1
+
+      - name: Build package
+        run: |
+          rm -f packages/*
+          make package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+      - name: Publish artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: com.shiftcmdk.autoalerts
+          path: ${{ github.workspace }}/packages/*.deb
