@@ -1,6 +1,7 @@
 name: Build deb with rootless
 
 on:
+  push:
   workflow_dispatch:
     #tags:
     #  - 'v*'
