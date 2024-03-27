@@ -8,6 +8,7 @@ AutoAlertsPreferences_FILES = AARootListController.xm ../Model/AAAlertInfo.m ../
 AutoAlertsPreferences_INSTALL_PATH = /Library/PreferenceBundles
 AutoAlertsPreferences_FRAMEWORKS = UIKit
 AutoAlertsPreferences_PRIVATE_FRAMEWORKS = Preferences
+AutoAlertsPreferences_CFLAGS = -Wno-deprecated-declarations
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 
