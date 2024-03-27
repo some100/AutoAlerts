@@ -30,3 +30,8 @@ jobs:
         with:
           name: com.shiftcmdk.autoalerts
           path: ${{ github.workspace }}/packages/*.deb
+      - name: Publish artifact to Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ github.workspace }}/packages/*.deb
+
